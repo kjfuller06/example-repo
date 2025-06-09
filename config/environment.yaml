@@ -1,7 +1,19 @@
-name: fs-fire
+name: example-repo
 dependencies:
+# Python dependencies
   - python==3.11
   - gdal==3.6
   - rasterio
   - geopandas
   - shapely
+
+# R base and packages
+  - r-base=4.2
+  - r-tidyverse
+  - r-data.table
+  - r-yaml
+  - r-here
+  - r-ggplot2
+  - r-devtools
+  - r-remotes
+  - r-rmarkdown
