@@ -1,0 +1,7 @@
+name: fs-fire
+dependencies:
+  - python==3.11
+  - gdal==3.6
+  - rasterio
+  - geopandas
+  - shapely
