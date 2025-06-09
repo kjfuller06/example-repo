@@ -1,4 +1,9 @@
-name: example-repo
+name: example
+channels:
+  - conda-forge
+  - defaults
+  - r
+
 dependencies:
 # Python dependencies
   - python==3.11
@@ -6,6 +11,9 @@ dependencies:
   - rasterio
   - geopandas
   - shapely
+  - pip
+  - pip:
+      - pyyaml
 
 # R base and packages
   - r-base=4.2
@@ -17,3 +25,6 @@ dependencies:
   - r-devtools
   - r-remotes
   - r-rmarkdown
+
+# shell tools
+  - yq # not to be confused with the python package "yq"
