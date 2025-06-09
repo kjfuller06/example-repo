@@ -1,0 +1,14 @@
+run:
+  name: example-repo
+  start_year: 2015
+  end_year: 2016
+
+elmfire:
+  version: 2025.0125
+  path: /mnt/hyperion/cluster_software/elmfire/build/linux/bin/elmfire_2025.0125
+
+paths:
+  raw_data: data/sample.csv
+  fuels_dir: /mnt/warsaw/fire_canada/fuels/fuels_20250317/tiles
+  weather_dir: /mnt/warsaw/fire/scratch/canada/test_tiles
+  tilefile: config/Canada_Tiles.csv
