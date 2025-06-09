@@ -28,7 +28,7 @@ conda env create -f config/environment.yaml
 ### 3. Activate the environment
 
 ```bash
-conda activate example-repo
+conda activate example
 ```
 
 ---
@@ -54,13 +54,13 @@ tasks/                  # Task-specific scripts and notebooks
 
 ```bash
 # Python
-python tasks/task-001_exploratory-analysis/example.py
+python tasks/data-exploration/example.py
 
 # R
-Rscript tasks/task-001_exploratory-analysis/example.R
+Rscript tasks/data-exploration/example.R
 
 # Bash
-bash tasks/task-001_exploratory-analysis/example.sh
+bash tasks/data-exploration/example.sh
 ```
 
 ### Option 2: Use the Makefile
