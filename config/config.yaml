@@ -1,6 +1,9 @@
 run:
   name: example
 
+paths:
+  root_path: ~/example-repo
+
 model:
   path: /mnt/warsaw/fire/collab-test/sample-model
   iteration:
