@@ -1,6 +1,6 @@
-# FS-Fire Project
+# Example Repo Project
 
-This repository demonstrates a task-based workflow for a multi-language project involving fire behavior modeling, geospatial analysis, and reproducible data pipelines using Python, R, and Bash.
+This repository demonstrates a task-based workflow for a multi-language project with reproducible data pipelines using Python, R, and Bash.
 
 ---
 
@@ -28,7 +28,7 @@ conda env create -f config/environment.yaml
 ### 3. Activate the environment
 
 ```bash
-conda activate fs-fire
+conda activate example-repo
 ```
 
 ---
@@ -75,7 +75,6 @@ make validate
 
 ## 🔄 Configuration
 
-- Edit runtime paths and options in: `config/fs-fire.conf`
 - Edit dataset and output file references in: `config/config.yaml`
 
 ---
