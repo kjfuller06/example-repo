@@ -5,26 +5,16 @@ channels:
   - r
 
 dependencies:
-# Python dependencies
-  - python==3.11
-  - gdal==3.6
-  - rasterio
-  - geopandas
-  - shapely
-  - pip
-  - pip:
-      - pyyaml
+  # Python runtime & packages
+  - python=3.10
+  - pandas
+  - scikit-learn
+  - pyyaml
 
-# R base and packages
+  # R runtime & packages
   - r-base=4.2
-  - r-tidyverse
-  - r-data.table
   - r-yaml
   - r-here
-  - r-ggplot2
-  - r-devtools
-  - r-remotes
-  - r-rmarkdown
 
-# shell tools
+  # CLI tool for shell scripts
   - yq # not to be confused with the python package "yq"
