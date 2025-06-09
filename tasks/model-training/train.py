@@ -1,5 +1,7 @@
 from sklearn.linear_model import LinearRegression
 import pandas as pd
+from pathlib import Path
+import yaml
 
 config_path = Path(__file__).resolve().parents[2] / "config" / "config.yaml"
 config = yaml.safe_load(config_path.read_text())
