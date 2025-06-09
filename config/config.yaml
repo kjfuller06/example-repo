@@ -1,14 +1,21 @@
 run:
-  name: example-repo
-  start_year: 2015
-  end_year: 2016
+  name: example
 
-elmfire:
-  version: 2025.0125
-  path: /mnt/hyperion/cluster_software/elmfire/build/linux/bin/elmfire_2025.0125
+model:
+  path: /mnt/warsaw/fire/collab-test/sample-model
+  iteration:
+    - run_id: run_001
+      start_year: 2015
+      end_year: 2016
+      scenario: baseline
+    - run_id: run_002
+      start_year: 2020
+      end_year: 2021
+      scenario: hot_dry
+    - run_id: run_003
+      start_year: 2030
+      end_year: 2035
+      scenario: future_risk
 
-paths:
-  raw_data: data/sample.csv
-  fuels_dir: /mnt/warsaw/fire_canada/fuels/fuels_20250317/tiles
-  weather_dir: /mnt/warsaw/fire/scratch/canada/test_tiles
-  tilefile: config/Canada_Tiles.csv
+data:
+  raw: /mnt/warsaw/fire/collab-test/sample.csv
