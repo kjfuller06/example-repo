@@ -10,9 +10,9 @@ config["paths"]["root_path"] = str(config_path.parents[2])
 data_mode = os.getenv("DATA_MODE", "real")
 
 if data_mode == "real":
-    data_path = config["data"]["real"]
+    data_path = config["data"]["raw"]
 else:
-    data_path = config["data"]["test"]
+    data_path = Path(__file__).resolve().parents[2] / "test" / "sample.csv"
 
 print("Running with DATA_MODE =", data_mode)
 print("Raw data path:", data_path)
