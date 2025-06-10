@@ -5,7 +5,24 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
-      - name: Run training
+      
+       - name: Setup Conda with caching
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-activate-base: false
+          activate-environment: example-test
+          environment-file: config/environment.yaml
+          use-mamba: true
+          cache-environment: true
+
+      - name: Confirm environment is ready
+        run: |
+          which Rscript
+          which python
+          conda list
+
+      - name: Run training with test data
         run: make train DATA_MODE=test
