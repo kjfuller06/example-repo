@@ -43,6 +43,7 @@ logs/                   # Output and error logs
 results/                # Metrics, plots, and diagnostics
 scripts/                # Reusable script components
 src/                    # Modular Python and R source code separated into task folders
+test/                   # Test data and model outputs for code testing
 ```
 
 ---
