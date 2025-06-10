@@ -21,8 +21,6 @@ jobs:
       - name: Confirm environment is ready
         shell: bash -l {0}
         run: |
-          conda init
-          conda activate example-test
           which Rscript
           which python
           conda list
