@@ -20,8 +20,6 @@ jobs:
 
       - name: Confirm environment is ready
         run: |
-          which Rscript
-          which python
           conda list
 
       - name: Run training with test data
