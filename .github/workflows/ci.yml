@@ -19,6 +19,7 @@ jobs:
           cache-environment: true
 
       - name: Confirm environment is ready
+        shell: bash -l {0}
         run: |
           conda init
           conda activate example-test
