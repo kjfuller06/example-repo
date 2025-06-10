@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run training
-        run: make train
+        run: make train DATA_MODE=test

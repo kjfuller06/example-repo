@@ -4,8 +4,15 @@ library(yaml)
 # Load YAML config
 config <- yaml.load_file(here("config", "config.yaml"))
 config$paths$root_path = here()
+data_mode <- Sys.getenv("DATA_MODE", unset = "real")
 
-cat("Raw data path:", config$data$raw, "\n")
+if (data_mode == "real") {
+  data_path <- config$data$raw
+} else {
+  data_path <- here("test", "sample.csv")
+}
 
-df <- read.csv(here(config$data$raw))
+cat("Raw data path:", data_path, "\n")
+
+df <- read.csv(data_path)
 summary(df)
