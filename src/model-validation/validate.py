@@ -5,6 +5,7 @@ import yaml
 
 config_path = Path(__file__).resolve().parents[2] / "config" / "config.yaml"
 config = yaml.safe_load(config_path.read_text())
+config["paths"]["root_path"] = str(config_path.parents[2])
 
 print("Raw data path:", config["data"]["raw"])
 

@@ -42,8 +42,7 @@ models/                 # Placeholder for trained models
 logs/                   # Output and error logs
 results/                # Metrics, plots, and diagnostics
 scripts/                # Reusable script components
-src/                    # Modular Python and R source code
-tasks/                  # Task-specific scripts and notebooks
+src/                    # Modular Python and R source code separated into task folders
 ```
 
 ---
@@ -54,13 +53,13 @@ tasks/                  # Task-specific scripts and notebooks
 
 ```bash
 # Python
-python tasks/data-exploration/example.py
+python src/data-exploration/exploration.py
 
 # R
-Rscript tasks/data-exploration/example.R
+Rscript src/data-exploration/exploration.R
 
 # Bash
-bash tasks/data-exploration/example.sh
+bash src/data-exploration/exploration.sh
 ```
 
 ### Option 2: Use the Makefile

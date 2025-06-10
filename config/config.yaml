@@ -2,7 +2,7 @@ run:
   name: example
 
 paths:
-  root_path: ~/example-repo
+  data_dir: /mnt/warsaw/fire/collab-test
 
 model:
   path: /mnt/warsaw/fire/collab-test/sample-model
