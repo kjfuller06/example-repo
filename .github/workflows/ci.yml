@@ -20,6 +20,7 @@ jobs:
 
       - name: Confirm environment is ready
         run: |
+          conda init
           conda activate example-test
           which Rscript
           which python
