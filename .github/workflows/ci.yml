@@ -20,7 +20,8 @@ jobs:
 
       - name: Confirm environment is ready
         run: |
+          conda activate example-test
+          which Rscript
+          which python
           conda list
-
-      - name: Run training with test data
-        run: make train DATA_MODE=test
+          make train DATA_MODE=test
